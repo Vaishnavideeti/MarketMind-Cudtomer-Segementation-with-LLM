@@ -18,3 +18,5 @@ Traditional clustering methods struggle to deal with unstructured data such as c
 
 <img width="862" height="808" alt="Image" src="https://github.com/user-attachments/assets/0e9a2fff-eeee-432f-a213-bd5c6da09cf4" />
 
+## Outputs
+- ![Image](https://github.com/user-attachments/assets/05c0fdd1-dd5c-41ee-a81d-483c58e07200)
