@@ -16,13 +16,5 @@ Traditional clustering methods struggle to deal with unstructured data such as c
 
 ## 🔁 Project Workflow
 
-```mermaid
-graph TD
-    A[Load Tabular Dataset] --> B[Compile Text using compile_text function]
-    B --> C[Load MiniLM Sentence Transformer - MiniLM L6 v2]
-    C --> D[Generate Text Embeddings as Dense Vectors]
-    D --> E[Outlier Detection using ECOD Model]
-    E --> F[Find Optimal K using Elbow Method]
-    F --> G[Perform KMeans Clustering]
-    G --> H[Visualize Clusters using PCA and t-SNE]
+<img width="862" height="808" alt="Image" src="https://github.com/user-attachments/assets/0e9a2fff-eeee-432f-a213-bd5c6da09cf4" />
 
