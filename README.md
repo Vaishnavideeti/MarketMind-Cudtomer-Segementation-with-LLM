@@ -14,7 +14,7 @@ Traditional clustering struggles with unstructured data like reviews, feedback, 
 
 ---
 
-## 🔁 Project Workflow
+## Project Workflow
 
 ```mermaid
 graph TD;
