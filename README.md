@@ -1,27 +1,27 @@
-# MarketMind-Customer-Segementation-with-LLM
- 
-MarketMind is a customer segmentation system that utilizes **Large Language Models (LLMs)** to intelligently group customers based on their behavioral, demographic, or textual data. It goes beyond traditional clustering by capturing deep semantic patterns from customer attributes, enabling more accurate, insightful, and actionable segments.
+#  MarketMind: Customer Segmentation using LLM
+
+MarketMind is a customer segmentation pipeline powered by **Large Language Models (LLMs)** and clustering algorithms. It transforms customer data—especially textual attributes—into meaningful segments using semantic understanding, outlier filtering, and unsupervised learning. This empowers marketers and analysts to discover hidden customer groups and derive actionable insights.
 
 ---
 
 ##  Why Use LLMs for Customer Segmentation?
 
-Traditional clustering algorithms (like KMeans or DBSCAN) work well for structured numerical data, but struggle with unstructured or textual data (e.g., customer feedback, preferences, purchase descriptions). 
+Traditional clustering struggles with unstructured data like reviews, feedback, or descriptions. LLMs overcome this by:
 
-LLMs offer several advantages:
-
--  **Semantic Understanding**: LLMs convert unstructured customer data into meaningful embeddings.
--  **Contextual Grouping**: Similar customers (even with different wording) are grouped based on meaning, not just keywords.
--  **Explainability**: LLMs can generate natural language summaries of each customer segment, improving interpretability for business teams.
+-  **Semantic Embedding**: Transforming raw text into dense, meaningful vector representations.
+-  **Context-Aware Grouping**: Capturing hidden intent and behavior patterns from text data.
+-  **Segment Explainability**: Helping auto-label segments using natural language generation.
 
 ---
 
-##  Project Workflow
+## 🔁 Project Workflow
 
 ```mermaid
 graph TD;
-    A[Customer Dataset] --> B[Preprocessing];
-    B --> C[Text Embedding using LLM];
-    C --> D[Clustering on Embeddings];
-    D --> E[Segment Labeling and Insight Generation];
-    E --> F[Output: Segmented Customers + Descriptions]
+    A[Load Tabular Dataset] --> B[Compile Text from Rows using `compile_text`];
+    B --> C[Load MiniLM SentenceTransformer ('all-MiniLM-L6-v2')];
+    C --> D[Generate Embeddings (Text → Dense Vectors)];
+    D --> E[Outlier Detection using ECOD Model];
+    E --> F[Find Optimal K using Elbow Method];
+    F --> G[Perform KMeans Clustering];
+    G --> H[Visualize Clusters using PCA and t-SNE];
