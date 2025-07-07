@@ -25,3 +25,19 @@ graph TD
     E --> F[Find Optimal K using Elbow Method]
     F --> G[Perform KMeans Clustering]
     G --> H[Visualize Clusters using PCA and t-SNE]
+marketmind/
+│
+├── data/                    # Input datasets
+├── images/                  # Visual outputs and architecture diagram
+├── models/                 # Saved embeddings or models
+├── notebooks/              # Jupyter notebooks (step-by-step demos)
+├── src/
+│   ├── preprocess.py        # Compile text, clean data
+│   ├── embedding.py         # Sentence embedding generation
+│   ├── outlier_detection.py # ECOD outlier filtering
+│   ├── clustering.py        # Elbow method and KMeans clustering
+│   ├── visualize.py         # PCA and t-SNE visualization
+│   └── utils.py             # Helper functions
+├── main.py                  # Main pipeline execution script
+├── requirements.txt         # Project dependencies
+└── README.md                # Documentation
