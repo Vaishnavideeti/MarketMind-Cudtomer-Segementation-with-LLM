@@ -1,1 +1,1 @@
-# MarketMind-Cudtomer-Segementation-with-LLM
+# MarketMind-Customer-Segementation-with-LLM
